@@ -1,0 +1,55 @@
+package org.usfirst.frc.team4028.robot.constants;
+
+public class Enums {
+
+		public enum ANALOG_MODE_JOYSTICK
+		{
+			UNDEFINED,
+			DRIVER_LEFT_X_AXIS,
+			DRIVER_LEFT_Y_AXIS,
+			DRIVER_RIGHT_X_AXIS,
+			DRIVER_RIGHT_Y_AXIS,
+			OPERATOR_LEFT_X_AXIS,
+			OPERATOR_LEFT_Y_AXIS,
+			OPERATOR_RIGHT_X_AXIS,
+			OPERATOR_RIGHT_Y_AXIS,
+		}
+		
+		public enum DIGITAL_MODE_BUTTON
+		{
+			UNDEFINED,
+			DRIVER_GREEN_A,
+			DRIVER_RED_B,
+			DRIVER_BLUE_X,
+			DRIVER_YELLOW_Y,
+			OPERATOR_GREEN_A,
+			OPERATOR_RED_B,
+			OPERATOR_BLUE_X,
+			OPERATOR_YELLOW_Y,
+		}
+		
+		public enum MODE_CHOICE
+		{
+			UNDEFINED,
+			DISABLED,
+			ANALOG,
+			DIGITAL
+		}
+		
+		public enum CMD_LATCH_MODE
+		{
+			UNDEFINED,
+			ENABLED,
+			DISABLED
+		}
+		
+		public enum REVERSE_CHOICE
+		{
+			UNDEFINED,
+			FORWARD,
+			REVERSE
+		}
+		
+		
+		
+}
