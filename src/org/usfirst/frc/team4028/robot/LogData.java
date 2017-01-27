@@ -1,8 +1,5 @@
 package org.usfirst.frc.team4028.robot;
 
-import java.time.Instant;
-import java.util.Date;
-
 public class LogData {
 	
 	public double Motor1Command;
