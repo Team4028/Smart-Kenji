@@ -4,21 +4,15 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.Instant;
 import java.util.Date;
 
 import org.usfirst.frc.team4028.robot.constants.Enums.DIGITAL_MODE_BUTTON;
 import org.usfirst.frc.team4028.robot.constants.Enums.MODE_CHOICE;
-import org.usfirst.frc.team4028.robot.constants.Enums.REVERSE_CHOICE;
 import org.usfirst.frc.team4028.robot.subsystems.DC_Motor;
 import org.usfirst.frc.team4028.robot.subsystems.Dashboard;
 import org.usfirst.frc.team4028.robot.subsystems.DriversStation2;
-import org.usfirst.frc.team4028.robot.subsystems.DriversStation2.DriverStationInputs;
-
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.IterativeRobot;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 
 public class Robot extends IterativeRobot 
