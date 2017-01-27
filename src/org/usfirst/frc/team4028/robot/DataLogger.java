@@ -11,6 +11,8 @@ import java.util.Date;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
+import edu.wpi.first.wpilibj.DriverStation;
+
 public class DataLogger {
 
 	private PrintWriter _writer;
@@ -21,11 +23,15 @@ public class DataLogger {
     	SimpleDateFormat outputFormatter = new SimpleDateFormat("yyyyMMdd_HHmmss_SSS");
 		outputFormatter.setTimeZone(TimeZone.getTimeZone("US/Eastern")); 
 		String newDateString = outputFormatter.format(new Date());
-    	
+    	 
+		DriverStation.reportWarning("Data Logger 1", true);
+		
     	// build the new filename
     	String fileName = newDateString + "_" + fileSuffix + ".tsv";
     	// build the full file path name
     	this.LogFilePathName = parentFolder + File.separator + fileName;
+    	
+    	DriverStation.reportWarning("Data Logger 2:" + this.LogFilePathName, true);
     	
         _writer = new PrintWriter(new BufferedWriter(new FileWriter(this.LogFilePathName, true)));
     }
